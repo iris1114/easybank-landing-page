@@ -1,0 +1,389 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css?family=Public+Sans:300,400&display=swap");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: "Public Sans", sans-serif;
+  font-size: 1.125rem;
+}
+
+.container {
+  max-width: 1024px;
+  margin: auto;
+}
+
+.container--pall {
+  padding: 15px;
+}
+
+img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+@media (max-width: 1023px) {
+  .m-hide {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .d-hide {
+    display: none;
+  }
+}
+
+.button {
+  padding: 14px 35px;
+  background: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
+  background: linear-gradient(to right, #31d35c, #2bb7da);
+  border-radius: 50px;
+  color: #fff;
+  font-size: 0.875rem;
+  text-decoration: none;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.header .header__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 17px 24px;
+  background-color: #fff;
+}
+
+.header .header__menu .header__menu--logo {
+  width: 150px;
+}
+
+.header .header__menu .header__menu--link a {
+  text-decoration: none;
+  font-size: 0.875rem;
+  color: #9698a6;
+  margin-right: 32px;
+  position: relative;
+}
+
+.header .header__menu .header__menu--link a:after {
+  content: "";
+  display: none;
+  position: absolute;
+  height: 5px;
+  left: 0;
+  right: 0;
+  bottom: -30px;
+  background: -webkit-gradient(linear, left top, right top, from(#31d35c), to(#2bb7da));
+  background: linear-gradient(to right, #31d35c, #2bb7da);
+}
+
+.header .header__menu .header__menu--link a:hover {
+  color: #000;
+}
+
+.header .header__menu .header__menu--link a:hover::after {
+  display: block;
+}
+
+.header .header__menu .header__menu--buger {
+  cursor: pointer;
+}
+
+.header .header__menu .header__menu--buger span {
+  display: block;
+  width: 26px;
+  height: 2px;
+  background-color: #2d314d;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  -webkit-transform-origin: 3px 1px;
+          transform-origin: 3px 1px;
+  margin-bottom: 5px;
+}
+
+.header.open {
+  opacity: 1;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#2d314d), to(transparent));
+  background-image: linear-gradient(#2d314d, transparent);
+  z-index: 2;
+}
+
+.header.open .header__menu .header__menu--link {
+  display: block;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 75%;
+  background: #fff;
+  padding: 1.625rem;
+  border-radius: 5px;
+}
+
+.header.open .header__menu .header__menu--link a {
+  display: block;
+  padding: 10px 0px;
+  text-align: center;
+  color: #2d314d;
+  width: 100%;
+}
+
+.header.open .header__menu .header__menu--link a:after {
+  display: none;
+}
+
+.header.open .header__menu .header__menu--buger span:first-child {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.header.open .header__menu .header__menu--buger span:nth-child(2) {
+  opacity: 0;
+}
+
+.header.open .header__menu .header__menu--buger span:last-child {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.hero {
+  background-color: #fafafa;
+  overflow: hidden;
+}
+
+.hero .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 1023px) {
+  .hero .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.hero .container .hero__text {
+  width: 40%;
+  position: relative;
+  top: -50px;
+}
+
+.hero .container .hero__text h2 {
+  font-size: 3rem;
+  color: #2d314d;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 767px) {
+  .hero .container .hero__text h2 {
+    font-size: 1.875rem;
+  }
+}
+
+.hero .container .hero__text p {
+  font-size: 1.125rem;
+  color: #9698a6;
+  line-height: 1.5;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 767px) {
+  .hero .container .hero__text p {
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 1023px) {
+  .hero .container .hero__text {
+    width: 90%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    text-align: center;
+  }
+}
+
+.hero .container .hero__image {
+  background-image: url(../images/bg-intro-desktop.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 60%;
+  position: relative;
+  right: -20%;
+  top: -100px;
+}
+
+@media (max-width: 1023px) {
+  .hero .container .hero__image {
+    width: 80%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    right: 0%;
+  }
+}
+
+@media (max-width: 639px) {
+  .hero .container .hero__image {
+    width: 100%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    right: 0%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

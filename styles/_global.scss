@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css?family=Public+Sans:300,400&display=swap");
+
+body {
+  font-family: "Public Sans", sans-serif;
+  font-size: $text-lg;
+}
+
+.container{
+  max-width: $max-width-container;
+  margin: auto;
+
+  &--pall{
+    padding: 15px;
+  }
+}
+
+img{
+  width: 100%;
+  vertical-align: middle;
+}
+
+
+.m-hide{
+  @include breakpoint-down(lg){
+    display: none;
+  }
+}
+
+.d-hide{
+  @include breakpoint-up(lg){
+    display: none;
+  }
+}
+
+.button {
+  padding: 14px 35px;
+  background: linear-gradient(to right, #31d35c, #2bb7da);
+  border-radius: 50px;
+  color: #fff;
+  font-size: $text-sm;
+  text-decoration: none;
+ 
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+
+
