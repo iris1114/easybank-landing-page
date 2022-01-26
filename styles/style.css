@@ -140,7 +140,7 @@ body {
 }
 
 .container {
-  max-width: 1024px;
+  max-width: 1200px;
   margin: auto;
 }
 
@@ -179,7 +179,7 @@ img {
   opacity: 0.8;
 }
 
-.header .header__menu {
+.header .menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -193,11 +193,11 @@ img {
   background-color: #fff;
 }
 
-.header .header__menu .header__menu--logo {
+.header .menu .menu__logo {
   width: 150px;
 }
 
-.header .header__menu .header__menu--link a {
+.header .menu .menu__link a {
   text-decoration: none;
   font-size: 0.875rem;
   color: #9698a6;
@@ -205,7 +205,7 @@ img {
   position: relative;
 }
 
-.header .header__menu .header__menu--link a:after {
+.header .menu .menu__link a:after {
   content: "";
   display: none;
   position: absolute;
@@ -217,19 +217,19 @@ img {
   background: linear-gradient(to right, #31d35c, #2bb7da);
 }
 
-.header .header__menu .header__menu--link a:hover {
+.header .menu .menu__link a:hover {
   color: #000;
 }
 
-.header .header__menu .header__menu--link a:hover::after {
+.header .menu .menu__link a:hover::after {
   display: block;
 }
 
-.header .header__menu .header__menu--buger {
+.header .menu .menu__buger {
   cursor: pointer;
 }
 
-.header .header__menu .header__menu--buger span {
+.header .menu .menu__buger span {
   display: block;
   width: 26px;
   height: 2px;
@@ -253,7 +253,7 @@ img {
   z-index: 2;
 }
 
-.header.open .header__menu .header__menu--link {
+.header.open .menu .menu__link {
   display: block;
   position: absolute;
   top: 10%;
@@ -266,7 +266,7 @@ img {
   border-radius: 5px;
 }
 
-.header.open .header__menu .header__menu--link a {
+.header.open .menu .menu__link a {
   display: block;
   padding: 10px 0px;
   text-align: center;
@@ -274,20 +274,20 @@ img {
   width: 100%;
 }
 
-.header.open .header__menu .header__menu--link a:after {
+.header.open .menu .menu__link a:after {
   display: none;
 }
 
-.header.open .header__menu .header__menu--buger span:first-child {
+.header.open .menu .menu__buger span:first-child {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
 
-.header.open .header__menu .header__menu--buger span:nth-child(2) {
+.header.open .menu .menu__buger span:nth-child(2) {
   opacity: 0;
 }
 
-.header.open .header__menu .header__menu--buger span:last-child {
+.header.open .menu .menu__buger span:last-child {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
