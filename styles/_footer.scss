@@ -1,0 +1,26 @@
+footer{
+    background-color: $darkBlue;
+    padding: 40px;
+
+    .footer__info{
+        display: flex;
+        flex-direction: column;
+
+        .footer__logo{
+            width: 150px;
+            margin-bottom: 30px;
+            
+        }
+
+        .footer__social{
+            display: flex;
+
+            .icon{
+                margin-right: 20px;
+            }
+        }
+
+    }
+
+    
+}

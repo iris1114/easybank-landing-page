@@ -37,7 +37,6 @@ img{
   background: linear-gradient(to right, #31d35c, #2bb7da);
   border-radius: 50px;
   color: #fff;
-  font-size: $text-sm;
   text-decoration: none;
  
   &:hover {
@@ -45,5 +44,86 @@ img{
   }
 }
 
+.text-xs {
+  font-size: 12px;
+  line-height: 16px;
+}
+.text-sm {
+  font-size: 14px;
+  line-height: 20px;
+}
+.text-base {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.text-lg {
+  font-size: 18px;
+  line-height: 28px;
+
+  @include breakpoint-down(md) {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+.text-xl {
+  font-size: 20px;
+  line-height: 28px;
+}
+.text-2xl {
+  font-size: 24px;
+  line-height: 32px;
+
+  @include breakpoint-down(md) {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+.text-3xl {
+  font-size: 30px;
+  line-height: 36px;
+}
+.text-4xl {
+  font-size: 36px;
+  line-height: 40px;
+
+  @include breakpoint-down(md) {
+    font-size: 30px;
+    line-height: 36px;
+  }
+}
+.text-5xl {
+  font-size: 48px;
+  line-height: 1;
+  
+  @include breakpoint-down(md) {
+    font-size: 36px;
+    line-height: 40px;
+  }
+}
+.text-6xl {
+  font-size: 60px;
+  line-height: 1;
+}
+.text-7xl {
+  font-size: 72px;
+  line-height: 1;
+}
+.text-8xl {
+  font-size: 96px;
+  line-height: 1;
+}
+.text-9xl {
+  font-size: 128px;
+  line-height: 1;
+}
 
 
+h1,h2{
+  color: $darkBlue;
+  margin-bottom: 36px;
+}
+
+p{
+  color: $grayishBlue;
+}

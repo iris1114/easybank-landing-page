@@ -14,26 +14,10 @@
             width: 40%;
             position: relative;
             top: -50px;
-
-            h2{
-                font-size: $text-5xl;
-                color: $darkBlue;
-                margin-bottom: 40px;
-
-                @include breakpoint-down(md){
-                    font-size: $text-3xl;
-                }
-            }
+            padding: 0px 15px;
 
             p{
-            font-size: $text-lg;
-            color: $grayishBlue;
-            line-height: 1.5;
-            margin-bottom: 50px;
-
-                @include breakpoint-down(md){
-                    font-size: $text-sm;
-                }
+                margin-bottom: 50px;
             }
             
 
