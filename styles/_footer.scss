@@ -1,26 +1,79 @@
-footer{
-    background-color: $darkBlue;
-    padding: 40px;
+footer {
+  background-color: $darkBlue;
+  padding: 50px 24px;
 
-    .footer__info{
+  .footer__wrap {
+    display: flex;
+
+    .footer__info {
+      display: flex;
+      flex-direction: column;
+      width: 30%;
+
+      .footer__logo {
+        width: 150px;
+        margin-bottom: 50px;
+      }
+
+      .footer__social {
         display: flex;
-        flex-direction: column;
 
-        .footer__logo{
-            width: 150px;
-            margin-bottom: 30px;
-            
+        .icon {
+          margin-right: 20px;
         }
+      }
 
-        .footer__social{
-            display: flex;
-
-            .icon{
-                margin-right: 20px;
-            }
-        }
-
+      @include breakpoint-down(lg) {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
     }
 
-    
+    .footer__menu {
+      display: flex;
+      width: 50%;
+
+      .footer__link {
+        margin-right: 100px;
+        a {
+          display: block;
+          text-decoration: none;
+          color: $veryLightGray;
+          margin-bottom: 15px;
+        }
+        @include breakpoint-down(lg) {
+          margin: auto;
+        }
+      }
+
+      @include breakpoint-down(lg) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 40px 0px;
+      }
+    }
+
+    .footer__btn {
+      width: 20%;
+      text-align: right;
+
+      .copyright {
+        margin-top: 50px;
+        color: $grayishBlue;
+      }
+
+      @include breakpoint-down(lg) {
+        width: 100%;
+        text-align: center;
+      }
+    }
+    @include breakpoint-down(lg) {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
 }

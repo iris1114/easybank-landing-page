@@ -1,52 +1,49 @@
-.feature{
-    padding: 100px 24px;
-    background-color: $lightGrayishBlue;
+.feature {
+  padding: 100px 24px;
+  background-color: $lightGrayishBlue;
 
-    .feature__heading{
-        margin-bottom: 48px;
-    }
+  .feature__heading {
+    margin-bottom: 48px;
+  }
 
-    .feature__list{
-        display: flex;
-        flex-wrap: wrap;
+  .feature__list {
+    display: flex;
+    flex-wrap: wrap;
 
-        .fearure__item{
-            width: 21%;
-            margin: 2%;
+    .fearure__item {
+      width: 21%;
+      margin: 2%;
 
-            .feature__icon{
-                width: 72px;
-                height: 72px;
-                margin-bottom: 44px;
+      .feature__icon {
+        width: 72px;
+        height: 72px;
+        margin-bottom: 44px;
 
-                @include breakpoint-down(sm){
-                    margin: auto;
-                    margin-bottom: 30px;
-                }
-            }
-
-            .feature__title{
-                color: $darkBlue;
-                margin-bottom: 24px;
-            }
-
-            @include breakpoint-down(lg){
-                width: 46%;
-                margin-bottom: 30px;
-             }
-    
-            @include breakpoint-down(sm){
-                margin-bottom: 30px;
-                width: 100%;
-             }
+        @include breakpoint-down(sm) {
+          margin: auto;
+          margin-bottom: 30px;
         }
+      }
 
-        @include breakpoint-down(sm){
-            flex-direction: column;
-         }
+      .feature__title {
+        color: $darkBlue;
+        margin-bottom: 24px;
+      }
 
-      
+      @include breakpoint-down(lg) {
+        width: 46%;
+        margin-bottom: 30px;
+      }
+
+      @include breakpoint-down(sm) {
+        text-align: center;
+        margin-bottom: 30px;
+        width: 100%;
+      }
     }
 
-  
+    @include breakpoint-down(sm) {
+      flex-direction: column;
+    }
+  }
 }

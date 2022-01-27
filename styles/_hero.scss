@@ -1,54 +1,53 @@
-.hero{
-   background-color: $veryLightGray; 
-   overflow: hidden;
+.hero {
+  background-color: $veryLightGray;
+  overflow: hidden;
 
-   .container{
-        display: flex;
-        align-items: center;
+  .container {
+    display: flex;
+    align-items: center;
 
-        @include breakpoint-down(lg){
-            flex-direction: column;
-        }
+    @include breakpoint-down(lg) {
+      flex-direction: column;
+    }
 
-        .hero__text{
-            width: 40%;
-            position: relative;
-            top: -50px;
-            padding: 0px 15px;
+    .hero__text {
+      width: 40%;
+      position: relative;
+      top: -50px;
+      padding: 0px 24px;
 
-            p{
-                margin-bottom: 50px;
-            }
-            
+      p {
+        margin-bottom: 50px;
+      }
 
-            @include breakpoint-down(lg){
-                width: 90%;
-                order: 2;
-                text-align: center;
-            }
-        }
+      @include breakpoint-down(lg) {
+        width: 90%;
+        order: 2;
+        text-align: center;
+      }
+    }
 
-        .hero__image{
-            background-image: url(../images/bg-intro-desktop.svg);
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            width: 60%;
-            position: relative;
-            right: -20%;
-            top: -100px;
+    .hero__image {
+      background-image: url(../images/bg-intro-desktop.svg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 60%;
+      position: relative;
+      right: -20%;
+      top: -100px;
 
-            @include breakpoint-down(lg){
-                width: 80%;
-                order: 1;
-                right: 0%;
-            }
+      @include breakpoint-down(lg) {
+        width: 80%;
+        order: 1;
+        right: 0%;
+      }
 
-            @include breakpoint-down(sm){
-                width: 100%;
-                order: 1;
-                right: 0%;
-            }
-        }
-   }
+      @include breakpoint-down(sm) {
+        width: 100%;
+        order: 1;
+        right: 0%;
+      }
+    }
+  }
 }
